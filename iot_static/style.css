@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+col-md-6 i{
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .btn_login {
+    font-size: 14px;
+/*    font-family: 宋体; */
+ 
+    width: 70px;
+    height: 28px;
+    line-height: 14px;
+    text-align: center;
+    color: green;
+    background-color: #ced4da;
+    border-style:solid;
+    border-color:#bfcad5;
+    border-radius: 0.25rem;
+    border: 0;
+    float: left;
+  }
+  .btn_login:hover {
+    color: green;
+    background-color: #b3c8cd;
+    cursor: pointer;/*鼠标变成手指样式*/
+/*    text-decoration: underline; */
+ }
+  #code:hover{
+    cursor: pointer;/*鼠标变成手指样式*/
+ }
+  #change_code:hover{
+    cursor: pointer;/*鼠标变成手指样式*/
+ }
+  #autologin:hover{
+    cursor: pointer;/*鼠标变成手指样式*/
+ }
