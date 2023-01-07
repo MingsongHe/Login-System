@@ -1,10 +1,11 @@
 
--- SQL数据库名
--- Database: `emscom_wp12356` //这是笔者已经有了的数据库，数据库名是 emscom_wp12356
+-- 1)建立一个数据库，库名是：emscom_wp800
+-- 在数据库首页，点击SQL标签，执行以下命令：
+CREATE DATABASE emscom_wp800;
 
--- --------------------------------------------------------
 
--- 建立一个数据表：  ufq_iot_user_login
+-- 2）建立一个数据表：  ufq_iot_user_login
+-- 建立数据库成功后，进入数据库，然后在SQL标签下执行下以下命令
 -- Table structure for table `ufq_iot_user_login`
 -- id 字段和 create_at 字段也可以不要
 
@@ -19,14 +20,14 @@ CREATE TABLE `ufq_iot_user_login` (
 COMMIT;
 
 
--- 指定数据表索引字段id
+-- 3）指定数据表索引字段是id
 -- Indexes for table
 
 ALTER TABLE `ufq_iot_user_login`
   ADD PRIMARY KEY (`id`);
 
 
--- 设置索引字段id为自动增值
+-- 4）设置索引字段id为自动增值
 -- AUTO_INCREMENT for table
 
 ALTER TABLE `ufq_iot_user_login`

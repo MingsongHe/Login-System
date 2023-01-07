@@ -88,7 +88,7 @@ session_start();
             $mail->SMTPSecure='tls';
 
             // h-hotel account
-            $mail->Username='电子邮箱';   //用户名：完整的电子邮箱
+            $mail->Username='电子邮箱';   //用户名：完整的电子邮箱,例如：123@msn.com
             $mail->Password='邮箱密码';        //电子邮箱密码
 
             // send by h-hotel email

@@ -33,7 +33,7 @@ if(isset($_POST["register"])){
                 $mail->SMTPAuth=true;
                 $mail->SMTPSecure='tls';
     
-                $mail->Username='电子邮箱';    //本地发出电子邮件的邮箱
+                $mail->Username='电子邮箱';    //本地发出电子邮件的邮箱，例如：123@msn.com
                 $mail->Password='邮箱密码';         //本地邮箱密码 
     
                 $mail->setFrom('email account', 'OTP Verification');
@@ -41,12 +41,14 @@ if(isset($_POST["register"])){
     
                 $mail->isHTML(true);
                 $mail->Subject="Your verify code 您的验证码";
-                $mail->Body="<p>Dear user, </p> <h3>Your verify OTP code is $otp <br></h3>
-                    <br><br>
-                    <a href='https://www.ems156.com/zh/iot-verification/'>https://www.ems156.com/zh/iot-verification/</a>
-                    <p>With regrads,</p>
-                    <b>EMS SUNLIGHT SERVICE 伊麦阳光服务</b>
-                    http://ems156.com/";
+                $mail->Body="<p>Dear user, </p> <h3>Your verify OTP code is 您的注册验证码是： $otp <br></h3>
+                    
+                请在注册验证页面（或点击以下链接）完成注册验证：</br>
+                <a href='https://www.ems156.com/zh/iot-verification/'>https://www.ems156.com/zh/iot-verification/</a>
+                
+                <p>With regrads,</p>
+                <b>EMS SUNLIGHT SERVICE 伊麦阳光服务</b>
+                http://ems156.com/";
     
                     if(!$mail->send()){
                         ?>

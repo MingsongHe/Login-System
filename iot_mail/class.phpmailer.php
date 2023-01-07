@@ -70,7 +70,7 @@ class PHPMailer
      * The From email address for the message.
      * @var string
      */
-    public $From = '电子邮箱';                 //和注册表单提供的用户名（即电子邮箱地址）相同 
+    public $From = '电子邮箱';                 //和注册表单提供的用户名（即电子邮箱地址）相同,例如：123@msn.com
 
     /**
      * The From name of the message.

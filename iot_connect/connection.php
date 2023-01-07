@@ -1,8 +1,8 @@
 <?php 
 $dbServername = "localhost";
 $dbUsername = "数据库用户名";          //数据库用户名, 一般是 root
-$dbPassword = "33-xp!)0L32SVy]@";
-$dbName = "emscom_wp12356";           //数据库名
+$dbPassword = "password";
+$dbName = "emscom_wp800";           //数据库名
 
 $connect = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 /*
