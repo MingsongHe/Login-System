@@ -50,7 +50,7 @@ if(isset($_POST["register"])){
                 <b>EMS SUNLIGHT SERVICE 伊麦阳光服务</b>
                 http://ems156.com/";
     """
-    从27行到51行的电子邮件部分，如果是在WordPress环境，可以使用下面的代码：
+    从27行到51行的电子邮件部分，如果是在WordPress环境，可以使用下面的代码, 还不需要mail目录里的3个文件：
     $flag = wp_mail( $email, "注册验证码 ", 'Dear user, Your verify OTP code is: '.$otp.' 
                     
                     点击链接：https://bilingualplan.com/zh/iot-verification  输入上述六位数验证码，完成注册。
