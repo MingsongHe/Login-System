@@ -28,3 +28,13 @@ I've updated the login-System more security.
 发电子邮件部分，class.phpmailer.php 文件有3处要根据读者情况，一个是中文显示（行号：48）, 一个是电子邮箱地址,（行号：73），
 第三个是在行号79处 电子邮件服务器在读者自己的电子邮箱里可以找到（有困难连线笔者）
 笔者在网站上的电子邮件服务器也遇到了一点困难，如果您也不顺利，也可以联络笔者.
+"""
+    从27行到51行的电子邮件部分，如果是在WordPress环境，可以使用下面的代码：
+    $flag = wp_mail( $email, "注册验证码 ", 'Dear user, Your verify OTP code is: '.$otp.' 
+                    
+                    点击链接：https://bilingualplan.com/zh/iot-verification  输入上述六位数验证码，完成注册。
+                    
+                    With regrads,
+                    EMS SUNLIGHT SERVICE 伊麦阳光服务
+                    https://bilingualplan.com' );
+    """
